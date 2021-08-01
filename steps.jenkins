@@ -34,9 +34,6 @@ pipeline {
             steps {
                 sh 'python3'
                 sh 'docker pull selenoid/chrome'
-                sh 'sudo groupadd docker'
-                sh 'sudo usermod -aG docker $USER'
-                sh 'sudo newgrp docker'
                 sh 'chmod +x ./cm'
                 sh './cm selenoid start'
 		        sh './cm selenoid status'
