@@ -2,8 +2,8 @@ import pytest
 import time
 
 #    Команды для запуска теста:
-# pytest -s -vv --language=es test_items.py  - для эстонского языка
-# pytest -s -vv --language=fr test_items.py  - для французского языка
+# pytest -s -vv --alluredir=results --language=es test_items.py  - для эстонского языка
+# pytest -s -vv --alluredir=results --language=fr test_items.py  - для французского языка
 # pytest -s -vv test_items.py
 
 def test_button_bucket(browser):
