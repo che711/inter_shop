@@ -17,12 +17,12 @@ pipeline {
         }
         stage("Second step") {
             steps {
-                chuckNorris()
+                echo "Hello, Jenkins!"
             }
         }
         stage("Third step") {
             steps {
-                echo "Hello, Jenkins!"
+                chuckNorris()
             }
         }
         stage("Fourth step") {
@@ -42,7 +42,7 @@ pipeline {
         }
         stage('Start "job to git"') {
             steps {
-                echo "Hello, Jenkins!"
+                build 'job to git'
             }
         }
     }
