@@ -1,2 +1,2 @@
 # inter_shop
-My shop
+Interim project from Stepik
