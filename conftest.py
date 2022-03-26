@@ -11,6 +11,7 @@ def browser(request):
     user_language = request.config.getoption("language")
     options = Options()
     options.add_argument("--headless")
+    options.add_argument("--window-size=1920,1080")
     options.add_experimental_option('prefs', {'intl.accept_languages': user_language})
     browser = webdriver.Chrome(options=options)
     yield browser
